@@ -4,12 +4,12 @@ This repository provides the official implementation of the ICLR 2026 poster ["S
 
 Si-GT is a graph Transformer model designed for fast interconnect signal integrity analysis in integrated circuit design. It supports two key tasks: **crosstalk delay prediction** and **crosstalk glitch prediction**. For crosstalk delay, Si-GT predicts the net delay on both aggressor and victim nets. For crosstalk glitch, Si-GT predicts the peak noise voltage and noise width.
 
-<img src="github_page/crosstalk_fig1.png" width="70%">
+<img src="github_page/crosstalk_fig1.png" width="100%">
 
 # Model Overview
 Si-GT elaborates three key designs: (1) virtual NET token to encode net-specific signal characteristics and serve as net-wise representation, (2) mesh pattern encoding to embed high-order mesh structures at each node while distinguishing uncoupled wire segments, and (3) intra-inter net (IIN) attention mechanism to capture structures of signal propagation path and coupling connections.
 
-<img src="github_page/crosstalk_fig3.png" width="70%">
+<img src="github_page/crosstalk_fig3.png" width="100%">
 
 # Dataset Download
 
@@ -98,3 +98,17 @@ We provide two Jupyter notebooks for loading trained checkpoints, running infere
 
 - `glitch_inference.ipynb`
 - `delay_inference.ipynb`
+
+# Citation
+
+If you find this repository useful, please consider citing our paper:
+```bibtex
+@inproceedings{
+hu2026sigt,
+title={Si-{GT}: Fast Interconnect Signal Integrity Analysis for Integrated Circuit Design via Graph Transformers},
+author={Yuting Hu and Tarek Mohamed and Chenhui Xu and Hua Xiang and Hussam Amrouch and Gi-Joon Nam and Jinjun Xiong},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=orO5727bSh}
+}
+```
