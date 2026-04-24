@@ -14,7 +14,7 @@ from ogb.graphproppred import Evaluator
 from model import GNNDelay, DeepGCNDelay, GraphomerDelay,  SiGTDelay, GraphGPSDelay, SGFormerDelay
 
 
-model_name = 'GraphGPS'  # 'NormGNN', 'DeepGCN', 'Graphomer', 'SGFormer', 'GraphGPS', 'SiGT'
+model_name = 'SiGT'  # 'NormGNN', 'DeepGCN', 'Graphomer', 'SGFormer', 'GraphGPS', 'SiGT'
 task = 'delay'
 mode = 'segment'  # 'segment' or 'sink'
 vic_only = False # Whether to use only VIC nodes for training and evaluation. If False, all nodes are used.
